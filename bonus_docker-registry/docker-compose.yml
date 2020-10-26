@@ -3,8 +3,9 @@ version: "3.3"
 services:
   gitlab:
     restart: always
+    container_name: mygitlab
     image: gitlab/gitlab-ce:latest
-    hostname: 'gitlab'
+    hostname: "gitlab"
     environment:
       GITLAB_OMNIBUS_CONFIG: |
         external_url "https://gitlab.local"
